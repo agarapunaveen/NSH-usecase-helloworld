@@ -26,7 +26,7 @@ jobs:
     # Build, tag, and push Docker image for Patient Service
     - name: Build, Tag & Push Docker Image for Patient Service
       run: |
-        cd App/hellow-world/
+        cd App/hello-world/
         # docker build -t patient-service:latest -f Dockerfile .
         docker build -t hackathon/helloworld .
         docker tag hackthon/helloworld:latest ${{ secrets.helloworld_ecr_url }}:latest

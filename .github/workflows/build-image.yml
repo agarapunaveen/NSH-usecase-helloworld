@@ -24,11 +24,10 @@ jobs:
          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
     # Build, tag, and push Docker image for Patient Service
-    - name: Build, Tag & Push Docker Image for Patient Service
+    - name: Build, Tag & Push Docker Image for helloworld
       run: |
         cd App/hello-world/
-        # docker build -t patient-service:latest -f Dockerfile .
         docker build -t hackathon/helloworld .
-        docker tag hackthon/helloworld:latest ${{ secrets.helloworld_ecr_url }}:latest
+        docker tag hackathon/helloworld:latest ${{ secrets.helloworld_ecr_url }}:latest
         docker push ${{ secrets.helloworld_ecr_url }}:latest
 

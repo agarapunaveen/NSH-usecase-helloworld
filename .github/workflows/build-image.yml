@@ -30,4 +30,3 @@ jobs:
         docker build -t hackathon/helloworld .
         docker tag hackathon/helloworld:latest ${{ secrets.helloworld_ecr_url }}:latest
         docker push ${{ secrets.helloworld_ecr_url }}:latest
-

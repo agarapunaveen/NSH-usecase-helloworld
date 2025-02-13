@@ -43,7 +43,7 @@ jobs:
         with:
           role-to-assume: arn:aws:iam::010928202531:role/open_id_connect
           role-session-name: githubactions
-          aws-region: us-east-1    
+          aws-region: "us-east-1"    
 
       # - name: Install TFLint
       #   run: |

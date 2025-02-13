@@ -39,7 +39,7 @@ jobs:
           terraform_version: 1.5.5
 
       - name: configure aws credentials
-        uses: aws-actions/configure-aws-credentials@e3dd6a429d7300a6a4c196c26e071d42e0343502
+        uses: aws-actions/configure-aws-credentials@v3
         with:
           role-to-assume: arn:aws:iam::010928202531:role/open_id_connect
           role-session-name: githubactions

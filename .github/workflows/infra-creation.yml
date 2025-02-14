@@ -76,9 +76,9 @@ jobs:
 
           # Run TFLint with proper syntax
           tflint --config .tflint.hcl
-          env:
-           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          # env:
+           # AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+           # AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
            checkov -d . --quiet --framework terraform
        # Step: Install Checkov

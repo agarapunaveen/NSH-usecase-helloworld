@@ -1,4 +1,4 @@
-name: Infra Provisioning through Terraform..
+name: Infra Provisioning through Terraform...
 on:
   workflow_dispatch:
     inputs:
